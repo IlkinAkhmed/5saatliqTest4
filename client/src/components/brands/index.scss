@@ -1,0 +1,110 @@
+.brands {
+    width: 100%;
+    padding: 50px;
+
+    .brand-head {
+        width: 100%;
+        text-align: center;
+
+        h2 {
+            color: #003072;
+            font-size: 2em;
+            padding: 30px 0;
+        }
+
+        p {
+            color: gray;
+            letter-spacing: 2px;
+        }
+
+    }
+
+    .brand-wrapper {
+        width: 85%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .brand-card {
+            width: 32%;
+
+            .brand-img {
+                overflow: hidden;
+                position: relative;
+
+                &:hover .icons {
+                    transform: translateX(0);
+                }
+
+                .icons {
+                    position: absolute;
+                    display: flex;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    flex-direction: column;
+                    width: 50px;
+                    align-items: center;
+                    justify-content: space-evenly;
+                    background-color: rgb(255, 255, 255, 0.4);
+                    transform: translateX(-50px);
+                    transition: all .3s;
+
+                    i {
+                        color: #003072;
+                        font-size: 1.7em;
+                        cursor: pointer;
+
+                        &:hover {
+                            color: white;
+                        }
+                    }
+                }
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .brand-texts {
+                padding: 20px 0;
+                line-height: 2;
+
+                h3 {
+                    color: #003072;
+                    font-size: 1.5em;
+                }
+
+                span {
+                    color: gray;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .brands {
+        .brand-wrapper {
+            width: 95%;
+
+            .brand-card {
+                width: 48%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .brands {
+        .brand-wrapper {
+            width: 98%;
+
+            .brand-card {
+                width: 95%;
+            }
+        }
+    }
+}

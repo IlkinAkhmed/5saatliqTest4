@@ -1,0 +1,88 @@
+.add {
+    width: 100%;
+    overflow-x: scroll;
+    padding: 150px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: gray;
+    color: white;
+
+    form {
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 450px;
+        border: 2px solid gray;
+        border-radius: 8px;
+        background-color: rgb(0, 48, 114, 0.5);
+        color: white;
+
+        input {
+            width: 70%;
+            height: 40px;
+            outline: none;
+            border: 1px solid gray;
+            border-radius: 8px;
+            text-align: center;
+
+            &:focus {
+                border-color: red;
+            }
+        }
+    }
+
+    table {
+        border: 1px solid gray;
+        background-color: black;
+        color: white;
+        width: 1200px;
+        margin: 50px 0;
+        overflow-y: scroll;
+
+        th {
+            padding: 10px 0;
+            border-bottom: 1px solid gray;
+            border-right: 1px solid gray;
+        }
+
+        td {
+            border-bottom: 1px solid gray;
+            border-right: 1px solid gray;
+            padding: 20px 10px;
+
+            .fa-trash-can {
+                color: red;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .add {
+        form {
+            width: 300px;
+            height: 350px;
+        }
+
+        .search {
+            width: 70% !important;
+        }
+
+        table {
+            overflow-x: scroll;
+        }
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+    .add {
+        table {
+            overflow-x: scroll;
+        }
+    }
+}

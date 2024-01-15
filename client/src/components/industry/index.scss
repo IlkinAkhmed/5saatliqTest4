@@ -1,0 +1,102 @@
+.industry {
+    width: 100%;
+    padding: 50px 0;
+    color: #003072;
+
+    .industry-inner {
+        width: 80%;
+        margin: auto;
+
+        .industry-head {
+            width: 60%;
+            margin: auto;
+            text-align: center;
+            line-height: 1.5;
+
+        }
+
+        .industry-wrapper {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding: 40px 0;
+            gap: 20px;
+
+            .ind-card {
+                width: 23%;
+                height: 150px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                background-color: rgb(230, 255, 255);
+                border-radius: 8px;
+                gap: 10px;
+
+                .fa-graduation-cap,
+                .fa-city,
+                .fa-cart-shopping,
+                .fa-plane-departure {
+                    font-size: 3em;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .industry {
+        .industry-inner {
+            width: 95%;
+
+            .industry-head {
+                width: 80%;
+            }
+
+            .industry-wrapper {
+                .ind-card {
+                    width: 95%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+    .industry {
+        .industry-inner {
+            width: 95%;
+
+            .industry-head {
+                width: 75%;
+            }
+
+            .industry-wrapper {
+                .ind-card {
+                    width: 48%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .industry {
+        .industry-inner {
+            width: 90%;
+
+            .industry-head {
+                width: 70%;
+            }
+
+            .industry-wrapper {
+                .ind-card {
+                    width: 30%;
+                }
+            }
+        }
+    }
+}

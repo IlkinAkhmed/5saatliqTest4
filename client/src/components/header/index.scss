@@ -1,0 +1,75 @@
+header {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url('https://preview.colorlib.com/theme/itlock/assets/img/hero/h1_hero1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .header-inner {
+        width: 80%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 10px;
+
+        h1 {
+            width: 50%;
+            color: white;
+            font-size: 4.3em;
+        }
+        hr{
+            height: 3px;
+            background-color: white;
+            width: 100px;
+        }
+        p{
+            width: 40%;
+            color: white;
+            font-weight: bold;
+            
+        }
+        button{
+            cursor: pointer;
+            padding: 10px 20px;
+            background-color: transparent;
+            border: 2px solid white;
+            color: white;
+            font-size: 1.5em;
+            transition: all .3s;
+            &:hover{
+                color: rgb(33, 33, 141);
+                background-color: white;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    header{
+        .header-inner{
+            width: 98%;
+            h1{
+                width: 80%;
+                font-size: 2em;
+            }
+            p{
+                width: 70%;
+            }
+            button{
+                padding: 5px 10px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+    header{
+        .header-inner{
+            width: 95%;
+        }
+    }
+}

@@ -1,0 +1,113 @@
+.insight {
+    width: 100%;
+    padding: 50px 0;
+    color: white;
+    min-height: 600px;
+
+    .ins-inner {
+        width: 80%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 430px;
+
+        .left {
+            width: 50%;
+            display: flex;
+            padding: 50px 60px;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            gap: 50px;
+            background-color: rgb(33, 33, 141);
+            max-height: 100%;
+
+            h2 {
+                font-size: 2em;
+            }
+
+            button {
+                cursor: pointer;
+                padding: 10px 20px;
+                background-color: transparent;
+                border: 2px solid white;
+                color: white;
+                font-size: 1.5em;
+                transition: all .3s;
+                &:hover{
+                    color: rgb(33, 33, 141);
+                    background-color: white;
+                }
+            }
+        }
+
+        .right {
+            width: 50%;
+            overflow: hidden;
+            img {
+                width: 87%;
+
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px)  {
+    .insight {
+        .ins-inner {
+            width: 95%;
+            flex-wrap: wrap;
+            .left {
+                padding: 10px 20px;
+                width: 100%;
+            }
+
+            .right {
+                width: 100%;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+    .insight {
+        .ins-inner {
+            width: 90%;
+            flex-wrap: wrap;
+            .left {
+                padding: 10px 20px;
+                width: 100%;
+            }
+
+            .right {
+                width: 100%;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .insight {
+        .ins-inner {
+            width: 90%;
+
+            .left {
+                padding: 10px 20px;
+            }
+
+            .right {
+                overflow: hidden;
+                img {
+                    width: 95%;
+                }
+            }
+        }
+    }
+}

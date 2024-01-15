@@ -1,0 +1,158 @@
+nav {
+    width: 100%;
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    z-index: 5;
+
+    .nav-inner {
+        width: 95%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .logo-and-texts {
+            width: 60%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .nav-texts {
+                width: 80%;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+
+                .nav-link {
+                    color: #003072;
+                    font-weight: bold;
+                }
+
+                .nav-link.active {
+                    color: red;
+                }
+            }
+        }
+
+        .nav-logos {
+            width: 30%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            .wish{
+                position: relative;
+                i{
+                    margin-right: 20px;
+                }
+                p{
+                    position: absolute;
+                    top: -10px;
+                    right: 10px;
+                    padding: 0 5px;
+                    background-color: #003072;
+                    color: white;
+                    border-radius: 100%;
+                }
+            }
+
+            .fa-heart,
+            .fa-bag-shopping {
+                color: #003072;
+                font-size: 1.3em;
+                margin-right: 10px;
+                cursor: pointer;
+
+                &:hover {
+                    color: red;
+                }
+            }
+
+            button {
+                cursor: pointer;
+                width: 40%;
+                padding: 10px 0;
+                border: 1px solid #003072;
+                background-color: white;
+                font-weight: bold;
+                color: #003072;
+
+                &:hover {
+                    color: white;
+                    background-color: #003072;
+                }
+            }
+
+            .head {
+                i {
+                    font-size: 1.5em;
+                    color: #003072;
+                }
+            }
+
+            .have {
+                width: 60%;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px){
+    nav{
+        .nav-inner{
+            .logo-and-texts{
+                .nav-texts{
+                    display: none;
+                }
+            }
+            .nav-logos{
+                display: none;
+            }
+        }
+    }
+
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    nav{
+        .nav-inner{
+            .logo-and-texts{
+                .nav-texts{
+                    display: none;
+                }
+            }
+            .nav-logos{
+                width: 40%;
+                button{
+                    display: none;
+                }
+                .have{
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+}
+
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    nav{
+        .nav-inner{
+            .nav-logos{
+                button{
+                    display: none;
+                }
+                .have{
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+}
